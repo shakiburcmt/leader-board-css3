@@ -143,3 +143,44 @@ hr {
     border: 10px solid #FEE5DF;
     border-radius: 14.6913px;
 }
+
+/* Media Queries */
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        background-color: yellow;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        background-color: khaki;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
